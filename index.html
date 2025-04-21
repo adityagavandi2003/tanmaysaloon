@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saloon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@700&family=Parisienne&family=Teko:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <h1 class="logo">Logo</h1>
+    <div class="hamberbar" id="hamberbar">X</div>
+    <ul class="nav-item n-right" id="navitem">
+      <li><a id="nav-items" class="" href="index.html">Home</a></li>
+      <li><a id="nav-items" class="" href="about.html">About us</a></li>
+      <li><a id="nav-items" class="" href="#services">Service</a></li>
+      <li><a id="nav-items" class="" href="#">Contact</a></li>
+      <li>
+        <a href="#booknow"><b style="color: black">Book Now</b></a>
+      </li>
+      <li class="close" id="close">Close</li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <div class="main-head">
+        <div class="left-head">
+          <span>
+            <h4 class="subtitle">Welcome To Tanmay Salon</h4>
+          </span>
+          <div class="left-info">
+            <div class="main-text">
+              <h1 class="title">Best Men Solon for A Proffessional Look</h1>
+            </div>
+            <div class="description">
+              Our Salon offers high-performance customized
+              facials to provide you with visible results.
+            </div>
+          </div>
+          <div class="main-btn">
+            <a href="#" class="btn">Book Now</a>
+            <a href="#services">All Services</a>
+          </div>
+        </div>
+        <img src="/assets/mainn.png" class="img-main" alt="" />
+      </div>
+      <div class="about-us relative">
+        <div class="bg-about"></div>
+        <div class="content z-index">
+          <div class="images">
+            <img src="assets/michael-demoya-Q82AM6BWBPM-unsplash.jpg" alt="Hairdresser styling a customer"
+              class="img-large" />
+          </div>
+          <div class="text">
+            <h3 class="subtitle">About Us</h3>
+            <h1 class="title">
+              Best Haircut Salon <br />
+              For Men
+            </h1>
+            <p>
+              Let your hairdressers do their amazing job. Trim the hair to get
+              your desired look. Book an appointment with us for your favorite
+              hairstyles!
+            </p>
+            <a href="about.html" class="btn">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="about-us bg-color relative" id="booknow">
+        <div class="bg-book"></div>
+        <div class="content z-index">
+          <div class="text">
+            <h3 class="subtitle">Book Now</h3>
+            <h1 class="title white">
+              Book your appointment <br />
+              Online.
+            </h1>
+            <p>
+              Let your hairdressers do their amazing job. Trim the hair to get
+              your desired look. Book an appointment with us for your favorite
+              hairstyles!
+            </p>
+            <a href="#" class="btn">Book Now</a>
+          </div>
+          <div class="images">
+            <img src="assets/Screenshot 2024-12-28 114911.png" alt="Hairdresser styling a customer"
+              class="img-large" />
+          </div>
+        </div>
+      </div>
+      <div class="working">
+        <div class="workbox">
+          <img class="w-5" src="assets/michael-demoya-MUdB4YzDeKA-unsplash.jpg" alt="" />
+          <div class="box w-5">
+            <div class="w-7 m-1 l-2">WORKING DAYS</div>
+            <div class="w-7 m-1 l-1">We are open on all days in weeks</div>
+            <span class="time m-4 w-7">
+              <p>Morning</p>
+              <p>9AM TO 1PM</p>
+            </span>
+            <span class="time m-4 w-7">
+              <p>Evening</p>
+              <p>4PM TO 10PM</p>
+            </span>
+            <button class="p-5 m-4 bg-transperent">Book Now</button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div id="services" class="services relative">
+        <div class="bg-services"></div>
+        <div class="z-index">
+          <h2>Our Services</h2>
+          <h3>Popular Hair Cutting <br> And Salon</h3>
+          <div class="service-grid">
+            <div class="service-item highlight" onclick="updateContent('trendHaircut')">
+              <img src="assets/icons/haircut-1471711-1245939.png" alt="Trend Haircut">
+              <p>Trend Haircut</p>
+            </div>
+            <div class="service-item" onclick="updateContent('hairColor')">
+              <img src="assets/icons/haircolor.png"  alt="Hair Color">
+              <p>Hair Color</p>
+            </div>
+            <div class="service-item" onclick="updateContent('facialHairTrim')">
+              <img src="assets/icons/beardtrim.png" alt="Facial Hair Trim">
+              <p>Facial Hair Trim</p>
+            </div>
+            <div class="service-item" onclick="updateContent('headMassage')" >
+              <img src="assets/icons/headmassage.png" alt="Head Massage">
+              <p>Head Massage</p>
+            </div>
+          </div>
+          <div class="service-detail">
+            <div class="images">
+              <img id="simages" src="assets/treandhaircut.jpg" alt="Facial Hair Trim">
+            </div>
+            <div class="service-info">
+              <h4 id="stitle">Best HairCut Trends At <br> Home Treatment</h4>
+              <p id="para">
+                Experience the latest haircut trends with our skilled professionals. We ensure you look your best while enjoying a relaxing grooming session.
+              </p>
+              <ul>
+                <li><img class="min-icons" src="assets/icons/right.png" alt="right">Easy to use salon special offer
+                  navigation</li>
+                <li><img class="min-icons" src="assets/icons/right.png" alt="right">We care about our customers
+                  satisfaction</li>
+              </ul>
+              <div class="btnbox m-2">
+                <a href="#" class="btn">Book Now</a>
+                <a href="#" class="btn">Get Direction</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul class="links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="https://github.com/adityagavandi61">Contact Developer</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Map</h4>
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+              src="https://maps.google.com/maps?width=658&amp;height=351&amp;hl=en&amp;q=Shree vitthal mandir redi&amp;t=k&amp;z=20&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            <a href="https://sprunkin.com/">Sprunki</a>
+          </div>
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              width: 100%;
+              height: 351px;
+            }
+
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              width: 100%;
+              height: 351px;
+            }
+
+            .gmap_iframe {
+              height: 351px !important;
+            }
+          </style>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us On</h4>
+        <ul class="links">
+          <li><a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+          <li><a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>
+          Subscribe to our newsletter for a weekly dose
+          of news, updates, helpful tips, and
+          exclusive offers.
+        </p>
+        <form action="#">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+        <div class="icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
